@@ -3279,6 +3279,7 @@ $(ColorPurple ''"$CHOOSE_MENU_OPTION"'') "
 if [ $# = 0 ]; then
     menu
 else
+	if [ "${worldname}" = "" ] ; then  get_current_config ; fi
     case "$1" in
     start)   start_valheim_server ;;
     stop)    stop_valheim_server  ;;
