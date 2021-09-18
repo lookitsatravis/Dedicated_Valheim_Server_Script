@@ -3286,6 +3286,8 @@ else
     update)  check_apply_server_updates_beta ;;
     backup)  backup_world_data ;;
     status)  display_valheim_server_status ;;
+	version) check_local_valheim_build ;;
+	release_version) check_official_valheim_release_build ;;
     *)
         menu
         ;;
