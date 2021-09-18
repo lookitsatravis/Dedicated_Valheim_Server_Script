@@ -59,7 +59,6 @@ echo "$(tput setaf 0)$(tput setab 7)"$CHECKSUDO1"$(tput sgr 0)"
 echo "$(tput setaf 4)"$DRAW60""
 #    ###################################################### 
 [[ "$EUID" -eq 0 ]] || exec sudo "$0" "$@"
-clear
 ###############################################################
 ################### Default Variables #########################
 ###############################################################
@@ -2909,7 +2908,6 @@ function set_world_server() {
 		echo ""	
 	fi
 	request99="n"
-	clear
 }
 
 ### Port Validation for creating additional Valheim installs
@@ -3207,6 +3205,7 @@ $(ColorPurple ''"$CHOOSE_MENU_OPTION"'') "
 
 # Display Main Menu System
 menu(){
+	clear
 	if [ "${worldname}" = "" ] ; then  set_world_server ; fi
 	menu_header
 	echo -ne "
