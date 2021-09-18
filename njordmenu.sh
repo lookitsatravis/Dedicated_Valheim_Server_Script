@@ -3275,6 +3275,7 @@ $(ColorPurple ''"$CHOOSE_MENU_OPTION"'') "
         esac
 }
 # Call the menu function or the shortcut called in arg
+worldname=$VALHEIM_WORLDNAME
 if [ $# = 0 ]; then
     menu
 else
